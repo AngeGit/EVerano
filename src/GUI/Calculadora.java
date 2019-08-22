@@ -305,25 +305,7 @@ public class Calculadora extends javax.swing.JFrame {
         if (num1!=0){
          num2=Integer.valueOf(text);  
         }else{
-          num1=Integer.valueOf(text);  
-        }       
-    }
-
-    private void calcular() {           
-        guardarNum(cajaResultado.getText());
-        switch (operador){
-            case "+":
-                 cajaResultado.setText(String.valueOf(num1+num2));
-                break;
-            case "-":
-                 cajaResultado.setText(String.valueOf(num1-num2));
-                break;
-            case "*":
-                 cajaResultado.setText(String.valueOf(num1*num2));
-                break;
-            case "\\":
-                 cajaResultado.setText(String.valueOf(num1/num2));
-                break;
+          num1=Integer.valueOf(text); 
         }
         num1=Integer.valueOf(cajaResultado.getText());
        
